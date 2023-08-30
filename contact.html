@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Contact</title>
+    <link rel="shortcut icon" href="img/logo.png" />
+    <style>
+      body {
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        padding: 1em;
+      }
+    </style>
+    <link href="css/style.css" media="all" rel="stylesheet" type="text/css" />
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-CLS905KD3M"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'G-CLS905KD3M');
+    </script>
+  </head>
+  <body class="wrapper">
+    <!-- header -->
+    <header class="header">
+      <div class="inner">
+        <h1 class="header-logo">
+          <a href="/">Scade</a>
+        </h1>
+        <nav class="header-nav">
+          <ul class="header-nav-list">
+            <li class="header-nav-item"><a href="/contact">お問い合わせ</a></li>
+            <li class="header-nav-item">
+              <a href="/privacy_policy">プライバシーポリシー</a>
+            </li>
+            <li class="header-nav-item"><a href="/term">利用規約</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- /header -->
+    <p style="text-align: center; margin: 40px auto">
+      問い合わせ内容をご記入ください
+    </p>
+    <form
+      class="c-form"
+      action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfS1QAMHEPo0g84v5KDVgdyOJOelta4QOG1es2z2MrngRWpzA/formResponse?embedded=true"
+      method="POST"
+      target="hidden_iframe"
+      onsubmit="submitted=true;"
+    >
+      <div class="c-form__item">
+        <label class="c-form__label" for="field-name"
+          >会社名・名前<span class="c-form__required">必須</span></label
+        >
+        <input
+          name="entry.54701545"
+          class="c-form__input"
+          id="field-name"
+          placeholder="会社名 太郎"
+          type="text"
+          required="required"
+        />
+      </div>
+      <div class="c-form__item">
+        <label class="c-form__label" for="field-mail"
+          >メールアドレス<span class="c-form__required">必須</span></label
+        >
+        <input
+          name="entry.1713119525"
+          class="c-form__input"
+          id="field-mail"
+          placeholder="sample@gmail.com"
+          type="email"
+          required="required"
+        />
+      </div>
+      <div class="c-form__item">
+        <label class="c-form__label" for="field-message"
+          >メッセージ内容<span class="c-form__required">必須</span></label
+        >
+        <textarea
+          name="entry.86509228"
+          class="c-form__input"
+          id="field-message"
+          placeholder="お問い合わせ内容"
+          required="required"
+        ></textarea>
+      </div>
+      <div class="c-form__submit">
+        <button type="submit">送信する</button>
+      </div>
+      <script type="text/javascript">
+        var submitted = false;
+      </script>
+
+      <iframe
+        name="hidden_iframe"
+        id="hidden_iframe"
+        style="display: none"
+        onload="if(submitted){window.location='thanks.html';}"
+      ></iframe>
+    </form>
+  </body>
+</html>
